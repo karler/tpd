@@ -7,7 +7,7 @@
 		$miConsulta->execute();
 	?>
 <?php include('header.php'); ?>
-	<a href="nuevo.php" class="btn btn-success">Agregar</a>
+	<a href="nuevo.php" class="btn btn-success">Agregar</a><br>
 	<h1>Lista de Contactos</h1>
 	<table class="table table-striped table-sm">
 		<tr>
@@ -31,9 +31,9 @@
 					echo "<td>{$valor['email']}</td>";
 					echo "<td>{$valor['celular']}</td>";
 					$ruta1 = "http://localhost/tpd/e14/editar.php?idcontacto={$valor['idcontacto']}";
-					echo "<td><a href='$ruta1'>Editar</a></td>";
+					echo "<td><a href='$ruta1' class= 'btn btn-primary'>Editar</a></td>";
 					$ruta2 = "http://localhost/tpd/e14/eliminar.php?idcontacto={$valor['idcontacto']}";
-					echo "<td><a href='$ruta2'>Eliminar</a></td>";
+					echo "<td><a href='$ruta2' class= 'btn btn-danger'>Eliminar</a></td>";
 					echo "</tr>";
 				}
 			
