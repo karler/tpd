@@ -26,7 +26,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">Mi Menu</a>
+					<a class="navbar-brand" href="index.html">Mis Contactos</a>
 					<div class="social-media order-lg-last">
 						<p class="mb-0 d-flex">
 							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>

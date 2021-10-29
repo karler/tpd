@@ -1,15 +1,7 @@
-<?php include('bd.php'); ?>
-	<?PHP
-		// Prepara SELECT
-		$miConsulta = $miPDO->prepare('SELECT * FROM contactos;');
-
-		// Ejecuta consulta
-		$miConsulta->execute();
-	?>
 <?php include('header.php'); ?>
 
 
-<form>
+<form action="guardar.php" method="get">
   <div class="form-group row">
     <label for="idcontacto" class="col-4 col-form-label">Id Contacto</label> 
     <div class="col-8">
@@ -19,7 +11,7 @@
             <i class="fa fa-key"></i>
           </div>
         </div> 
-        <input id="idcontacto" name="idcontacto" type="text" class="form-control">
+        <input id="idcontacto" name="idcontacto" type="text" class="form-control" disabled>
       </div>
     </div>
   </div>
@@ -30,9 +22,9 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="apellido" class="col-4 col-form-label">Apellidos</label> 
+    <label for="apellidos" class="col-4 col-form-label">Apellidos</label> 
     <div class="col-8">
-      <input id="apellido" name="apellido" type="text" class="form-control">
+      <input id="apellido" name="apellidos" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
