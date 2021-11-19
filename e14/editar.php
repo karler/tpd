@@ -20,7 +20,7 @@
 				<i class="fa fa-key"></i>
 			  </div>
 			</div> 
-			<input id="idcontacto" name="idcontacto" type="text" class="form-control" value = "<?= $resultado['idcontacto'] ?>">
+			<input id="idcontacto" name="idcontacto" type="text" class="form-control" value = "<?= $resultado['idcontacto'] ?>" readonly>
 		  </div>
 		</div>
 	  </div>

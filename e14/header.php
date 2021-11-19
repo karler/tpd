@@ -41,8 +41,6 @@
 					<div class="collapse navbar-collapse" id="ftco-nav">
 						<ul class="navbar-nav ml-auto mr-md-3">
 							<li class="nav-item active"><a href="listar.php" class="nav-link">Contactos</a></li>
-							<li class="nav-item"><a href="nuevo.php" class="nav-link">Nuevo</a></li>
-							<li class="nav-item"><a href="#" class="nav-link">Mi portafolio</a></li>
 							<li class="nav-item"><a href="#" class="nav-link">Contáctame</a></li>
 						</ul>
 					</div>

@@ -32,7 +32,7 @@
 					echo "<td>{$valor['celular']}</td>";
 					$ruta1 = "http://localhost/tpd/e14/editar.php?idcontacto={$valor['idcontacto']}";
 					echo "<td><a href='$ruta1' class= 'btn btn-primary'>Editar</a></td>";
-					$ruta2 = "http://localhost/tpd/e14/eliminar.php?idcontacto={$valor['idcontacto']}";
+					$ruta2 = "http://localhost/tpd/e14/eliminar.php?idcontacto=".$valor['idcontacto'];
 					echo "<td><a href='$ruta2' class= 'btn btn-danger'>Eliminar</a></td>";
 					echo "</tr>";
 				}
