@@ -1,4 +1,5 @@
-<html lang="es">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,21 +36,32 @@
     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
+    
 <main class="form-signin">
+  <form>
+    <img class="mb-4" src="image/La_Salle_Oficial.png" alt="" width="200">
+    <h1 class="h3 mb-3 fw-normal">Ingresa tus datos</h1>
 
-<?PHP
-	session_start();
-	if (isset($_SESSION['email'])){
-		echo "Bienvenido a la página privada";
-		
-		echo "<br><br><a href='cerrarsesion.php'>Cerrar sesión</a>";
-	}else{
-		echo " ¡Te encuentras en una zona secreta!, solo visible por una persona identificada.";
-		
-		echo "<br><br><a href='login.php'>Login</a>";
-	}
-?>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Contraseña</label>
+    </div>
 
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Recuerdame
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+    <p class="mt-5 mb-3 text-muted">&copy; TPD - 2021</p>
+  </form>
 </main>
+
+
+    
   </body>
 </html>
