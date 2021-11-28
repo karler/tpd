@@ -9,7 +9,7 @@
         echo $valor," - ";
     }
     
-    //print_r($a);
+    //print_r($a) Comentario;
     echo "<br>";
     $a["name"] = "Mi Array";
 
